@@ -1,3 +1,3 @@
 <div class="alert alert-success" role="alert">
-    Operation has been completed
+    You have been registered for Cannex 2019
 </div>
