@@ -35,14 +35,7 @@
             <label for="specialty">Area of Expertise</label>
             <select class="form-control" id="specialty" name="specialty">
             <option>Select one</option>
-                    <option>Database Admin</option>
-                    <option>Programmer/Analyst</option>
-                    <option>Website Admin</option>
-                    <option>Graphic Designer</option>
-                    <option>ICT Security</option>
-                    <option>ICT Manager</option>
-                    <option>Ethical Hacker</option>
-                    <option>Social Media Managers</option>
+                    
                 <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
                    <option value="<?php echo $r['specialty_id'] ?>"><?php echo $r['name']; ?></option>
                 <?php }?>
