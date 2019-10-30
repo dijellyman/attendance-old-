@@ -16,8 +16,10 @@
                     $new_password = md5($password.$username);
                     // define sql statement to be executed
                     $sql = "INSERT INTO users (username,password) VALUES (:username,:password)";
+                    
                     //prepare the sql statement for execution
                     $stmt = $this->db->prepare($sql);
+                   
                     // bind all placeholders to the actual values
                     $stmt->bindparam(':username',$username);
                     $stmt->bindparam(':password',$new_password);
